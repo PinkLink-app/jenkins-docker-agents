@@ -17,7 +17,10 @@ ghcr.io/pinklink-app/jenkins-agent:base
 
 ### 2. .NET Image
 
-**Docker image:** `ghcr.io/pinklink-app/jenkins-agent:dotnet`
+**Docker image:** 
+```
+ghcr.io/pinklink-app/jenkins-agent:dotnet
+```
 
 **Description:**
 - Built on top of the Base Image.
@@ -26,7 +29,10 @@ ghcr.io/pinklink-app/jenkins-agent:base
 
 ### 3. Node.js Image
 
-**Docker image:** `ghcr.io/pinklink-app/jenkins-agent:nodejs`
+**Docker image:** 
+```
+ghcr.io/pinklink-app/jenkins-agent:nodejs
+```
 
 **Description:**
 - Built on top of the Base Image.
