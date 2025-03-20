@@ -1,12 +1,14 @@
+# docker build -t jenkins-agent:base .
+# docker tag jenkins-agent:base ghcr.io/pinklink-app/jenkins-agent:base
+# docker push ghcr.io/pinklink-app/jenkins-agent:base
+
 FROM jenkins/inbound-agent:latest
 
 USER root
 
-# Install OpenJDK 17
 RUN apt-get update && apt-get install -y openjdk-17-jdk && \
     rm -rf /var/lib/apt/lists/*
 
-# Set Java Home environment variable
 ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 
 USER jenkins
